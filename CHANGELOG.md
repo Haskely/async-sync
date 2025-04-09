@@ -5,9 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2024-04-09
+## v0.1.0 (2025-04-09)
 
-### Added
+### Feat
+
 - 初始版本发布
 - 核心功能实现
   - `run_async_in_sync` 函数 (从同步代码调用异步函数)

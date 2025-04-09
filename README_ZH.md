@@ -1,6 +1,6 @@
 # async-sync
 
-[中文文档](README_ZH.md)
+[English Documentation](README.md)
 
 [![PyPI version](https://img.shields.io/pypi/v/omni-pathlib.svg)](https://pypi.org/project/omni-pathlib/)
 [![Python Version](https://img.shields.io/pypi/pyversions/omni-pathlib.svg)](https://pypi.org/project/omni-pathlib/)
@@ -12,26 +12,26 @@
 
 -----
 
-**async-sync** — Elegantly convert between Python synchronous and asynchronous code
+**async-sync** —— 优雅地在 Python 同步和异步代码之间转换
 
-## Features
+## 特性
 
-- ✨ Simple and easy-to-use API
-- 🔄 Seamlessly call async functions in synchronous code
-- 🔄 Seamlessly call synchronous functions in async code
-- 🧠 Intelligent handling of nested event loops
-- 🛡️ Comprehensive type hints
-- 📦 No external dependencies
+- ✨ 简单易用的 API
+- 🔄 在同步代码中无缝调用异步函数
+- 🔄 在异步代码中无缝调用同步函数
+- 🧠 智能处理嵌套事件循环
+- 🛡️ 类型提示完备
+- 📦 无外部依赖
 
-## Installation
+## 安装
 
 ```sh
 pip install async-sync
 ```
 
-## Usage Examples
+## 使用示例
 
-### Convert async functions to sync functions
+### 将异步函数转换为同步函数
 
 ```python
 import async_sync
@@ -42,97 +42,97 @@ async def synced_func():
     await asyncio.sleep(1)
     return "Hello from async world!"
 
-# Can be called directly in synchronous code
-print(synced_func())  # Output: Hello from async world!
+# 可以在同步代码中直接调用
+print(synced_func())  # 输出：Hello from async world!
 
-# Also works in async code
+# 也可以在异步代码中调用
 async def main():
-    print(synced_func())  # Still works normally
+    print(synced_func())  # 仍然正常工作
 
 asyncio.run(main())
 ```
 
-### Convert sync functions to async functions
+### 将同步函数转换为异步函数
 
 ```python
 import async_sync
 import time
 
 def blocking_func(name):
-    time.sleep(1)  # Simulate time-consuming operation
+    time.sleep(1)  # 模拟耗时操作
     return f"Hello, {name}!"
 
-# Convert synchronous function to asynchronous
+# 将同步函数转换为异步函数
 async_hello = async_sync.to_async(blocking_func)
 
-# Use in async code
+# 在异步代码中调用
 import asyncio
 
 async def main():
-    # Can be called with await
+    # 可以用 await 调用
     result = await async_hello("World")
-    print(result)  # Output: Hello, World!
+    print(result)  # 输出：Hello, World!
 
-    # Can be called concurrently
+    # 可以并发调用多个
     results = await asyncio.gather(
         async_hello("Alice"),
         async_hello("Bob"),
         async_hello("Charlie")
     )
-    print(results)  # Output: ['Hello, Alice!', 'Hello, Bob!', 'Hello, Charlie!']
+    print(results)  # 输出：['Hello, Alice!', 'Hello, Bob!', 'Hello, Charlie!']
 
 asyncio.run(main())
 ```
 
-### Directly run coroutines or sync functions
+### 直接运行协程或同步函数
 
 ```python
 import async_sync
 import asyncio
 import time
 
-# Run coroutines in synchronous code
+# 在同步代码中运行协程
 async def fetch_data():
     await asyncio.sleep(1)
     return "Data fetched"
 
 data = async_sync.run_async_in_sync(fetch_data())
-print(data)  # Output: Data fetched
+print(data)  # 输出：Data fetched
 
-# Run synchronous functions in async code
+# 在异步代码中运行同步函数
 async def main():
     def cpu_intensive_task():
-        time.sleep(1)  # Simulate CPU-intensive task
+        time.sleep(1)  # 模拟CPU密集型任务
         return "Task completed"
 
     result = await async_sync.run_sync_in_async(cpu_intensive_task)
-    print(result)  # Output: Task completed
+    print(result)  # 输出：Task completed
 
 asyncio.run(main())
 ```
 
-## Development
+## 开发
 
-### Install dependencies
+### 安装依赖
 
 ```bash
 uv sync
 ```
 
-### Run tests
+### 运行测试
 
 ```bash
 uv run pytest
 ```
 
-### Commit
+### commit
 
 ```bash
 pre-commit install
 cz commit
 ```
 
-### Release
+### 发布
 
 ```bash
 cz bump
