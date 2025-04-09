@@ -16,3 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `@to_async` 装饰器 (将同步函数转换为异步函数)
 - 完整的单元测试、集成测试和边缘情况测试
 - 详细的文档和使用示例
+
+## v0.1.0 (2025-04-09)
+
+### Feat
+
+- add initial project structure with core functionality and documentation
