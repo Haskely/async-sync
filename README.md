@@ -2,13 +2,13 @@
 
 [中文文档](README_ZH.md)
 
-[![PyPI version](https://img.shields.io/pypi/v/omni-pathlib.svg)](https://pypi.org/project/omni-pathlib/)
-[![Python Version](https://img.shields.io/pypi/pyversions/omni-pathlib.svg)](https://pypi.org/project/omni-pathlib/)
-[![License](https://img.shields.io/github/license/Haskely/omni-pathlib.svg)](https://github.com/Haskely/omni-pathlib/blob/main/LICENSE)
-[![Downloads](https://static.pepy.tech/badge/omni-pathlib)](https://pepy.tech/project/omni-pathlib)
-[![GitHub Stars](https://img.shields.io/github/stars/Haskely/omni-pathlib.svg)](https://github.com/Haskely/omni-pathlib/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/Haskely/omni-pathlib.svg)](https://github.com/Haskely/omni-pathlib/issues)
-[![Dependencies](https://img.shields.io/librariesio/github/Haskely/omni-pathlib)](https://libraries.io/github/Haskely/omni-pathlib)
+[![PyPI version](https://img.shields.io/pypi/v/async-sync.svg)](https://pypi.org/project/async-sync/)
+[![Python Version](https://img.shields.io/pypi/pyversions/async-sync.svg)](https://pypi.org/project/async-sync/)
+[![License](https://img.shields.io/github/license/Haskely/async-sync.svg)](https://github.com/Haskely/async-sync/blob/main/LICENSE)
+[![Downloads](https://static.pepy.tech/badge/async-sync)](https://pepy.tech/project/async-sync)
+[![GitHub Stars](https://img.shields.io/github/stars/Haskely/async-sync.svg)](https://github.com/Haskely/async-sync/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Haskely/async-sync.svg)](https://github.com/Haskely/async-sync/issues)
+[![Dependencies](https://img.shields.io/librariesio/github/Haskely/async-sync)](https://libraries.io/github/Haskely/async-sync)
 
 -----
 

@@ -38,5 +38,5 @@
 
 ### 4. 验证
 
-1. 打开 https://test.pypi.org/project/omni-pathlib/
-2. 打开 https://pypi.org/project/omni-pathlib/
+1. 打开 https://test.pypi.org/project/async-sync/
+2. 打开 https://pypi.org/project/async-sync/
